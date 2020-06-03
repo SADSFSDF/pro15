@@ -114,8 +114,11 @@ input{
 .payWrap{
 	position: relative;
 	display: flex;
+	display: -webkit-flex;
 	align-items: center;
+	-webkit-align-items: center;
 	justify-content: center;
+	-webkit-justify-content: center;
 	text-align: left;
 	margin-bottom: 26px;
 }
