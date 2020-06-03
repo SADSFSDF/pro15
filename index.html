@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+	<link rel="stylesheet" href="css/index.css">
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+</head>
+<body>
+	<div class="bg_twrap">
+		<img src="images/1.png" class="bg_t">
+		<div class="bg_tinner">
+			<div class="bg_tinnerw_1">每天都可以领哦</div>
+			<div class="bg_tinnerw_2">美团外卖发红包啦</div>
+			<div class="bg_tinnerw_2">最高立减<font>18</font>元</div>
+		</div>
+	</div>
+	<div class="bg_form">
+		<div class="bg_formInner">
+			<input type="text" placeholder="请输入美团外卖手机号">
+			<div class="btn">点击领取</div>
+		</div>
+	</div>
+	<div class="btn_pay">怎么领红包？</div>
+	<div class="payWrap">
+		<div class="payWrapL">
+			<div class="payWrapLTitle">Step 第一步</div>
+			<div class="payWrapLContent">输入美团外卖手机号，</div>
+			<div class="payWrapLContent">点击领取</div>
+		</div>
+		<div class="payWrapR">
+			<img src="images/2.png" alt="">
+		</div>
+	</div>
+	<div class="payWrap">
+		<img src="images/5.png" alt="" class="i_5">
+		<img src="images/6.png" alt="" class="i_6">
+		<div class="payWrapR">
+			<img src="images/3.png" alt="">
+		</div>
+		<div class="payWrapL" style="padding-left: 15px;">
+			<div class="payWrapLTitle">Step 第二步</div>
+			<div class="payWrapLContent">优惠券直接到美团App账户</div>
+		</div>
+	</div>
+	<div class="payWrap">
+		<div class="payWrapL">
+			<div class="payWrapLTitle">Step 第三步</div>
+			<div class="payWrapLContent">选购好商品，在订单页</div>
+			<div class="payWrapLContent">面选择使用，可与商家</div>
+			<div class="payWrapLContent">券叠加使用</div>
+		</div>
+		<div class="payWrapR">
+			<img src="images/4.png" alt="">
+		</div>
+	</div>
+	<div class="notice">
+		<img src="images/7.png" alt="">
+		<span>活动说明</span>
+		<img src="images/8.png" alt="">
+	</div>
+	<div class="noticeContent">
+		<div>1、本次活动中红包领取截止至2020年12月31日24点；</div>
+		<div> 2、红包可在美团或美团外卖最新版客户端、美团外卖小程序下单且选择在线支付时使用；</div>
+		<div> 3、红包仅限非到店自取外卖订单，下午茶、夜宵、美食、蛋糕、团餐频道、甜点饮品频道使用； </div>
+		<div>4、外卖新人首单红包限新用户（设备、手机号、美团账号均未在美团外卖下过单）首次下单使用，且不与其他优惠（首减、满减、满赠、套餐增、折扣菜）同享； </div>
+		<div>5、使用红包时下单手机号码必须与收餐人手机号码、领取红包时输入的手机号码一致；</div>
+		<div> 6、此活动为部分区域有效，具体红包使用有效期及红包金额以实际收到为准； </div>
+		<div>7、其余问题详见美团外卖客户端：我的——红包——美团——红包、商家代金券使用说明； </div>
+		<div>8、活动过程中，任何活动参与方存在虚假交易、恶意套利、作弊等不诚信行为，美团外卖有权取消活动参与方的活动资格，并保留依法追究法律责任的权利； </div>
+		<div>9、活动期间，如出现不可抗力或情势变更的情况，美团外卖可依相关法律法规的规定主张免责； </div>
+		<div>10、如有其它疑问请咨询美团外卖客服10109777。</div>
+	</div>
+	<div class="fade"></div>
+	<div class="popWrap">
+		<div class="pw_1">请确认手机号</div>
+		<div class="pw_2">
+			<input type="text" value="1854875425">
+		</div>
+		<div class="pw_3">是否是美团外卖使用的手机号？</div>
+		<div class="pw_4"><img src="images/9.png" alt=""><span>每人只限提交一次号码</span></div>
+		<div class="btnWrap">
+			<div class="pw_5">返回修改</div>
+			<div class="pw_6">确认提交</div>
+		</div>
+	</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script>
+	$(".btn").on("click",function(){
+		$(this).addClass("btnActive")
+	})
+	$(".btn_pay").on("click",function(){
+		$(".fade").show();
+		$(".popWrap").show();
+		$("body").addClass("overflowHideen")
+	});
+	
+</script>
+</html>
